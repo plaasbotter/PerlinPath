@@ -92,15 +92,15 @@
                 Consider the small grid as an attempt to simplify the problem.
                 The algorithm needs to travel from top left to bottom right. The
                 movement cost is calculated from the number of the next grid
-                (g(n)) and the distance to the target (h(n)). Only verticle and
+                (g(n)) and the distance to the target (h(n)). Only vertical and
                 horizontal movements are considered.
               </p>
               <p>
-                Since we start at the top left, we can ignore the square. Lets
+                Since we start at the top left, we can ignore the square. Let's
                 consider the next two possible locations (2 and 7). The yellow
                 square will have a total score of f(n) = g(n) + h(n) which
                 calculates to f(n) = 2 + 4 = 6. The blue block will have a score
-                of 11. We keep both. For the next itteration of calculations we
+                of 11. We keep both. For the next iteration of calculations we
                 will start with the lowest value from the previous calculations
                 (yellow in this case) and continue onto 8 and so forth until we
                 reach the end.
@@ -109,10 +109,10 @@
                 Warning<br>Grid is 512 x 512, so max grid size should be less than 256
               </p>
               <p>
-                Notes<br>System is not stable, so should the path dissapear, please refresh page
+                Notes<br>System is not stable, so should the path disappear, please refresh page
               </p>
               <p>
-                Reference<br>Most of the text in the discussion is liberarly used from Wikipedia
+                Reference<br>Most of the text in the discussion was liberally used from Wikipedia
               </p>
             </v-row>
           </v-card-text>
