@@ -1,8 +1,8 @@
 <template>
   <v-container fluid>
-    <v-row class="text-center">
-      <v-col cols="6">
-        <v-card min-width="550px" class="pb-3">
+    <div class="kek">
+      <div min-width="50vw">
+        <v-card min-width="50vw" class="pb-3">
           <v-card-text>
             <div id="div_template" ref="busstop"></div>
           </v-card-text>
@@ -54,9 +54,9 @@
             </v-row>
           </v-card-text>
         </v-card>
-      </v-col>
+      </div>
       <!-- EXPLANATION -->
-      <v-col cols="5">
+      <div>
         <v-card height="100%">
           <v-card-title> DISCUSSION </v-card-title>
           <v-card-text>
@@ -117,8 +117,8 @@
             </v-row>
           </v-card-text>
         </v-card>
-      </v-col>
-    </v-row>
+      </div>
+    </div>
   </v-container>
 </template>
 
@@ -957,6 +957,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.kek{
+  display:flex;
+  flex-direction: row;
+  text-align: center;
+}
+
 .aas {
   font-size: 8rem;
 }

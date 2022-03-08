@@ -13,29 +13,33 @@
           width="66%"
         />
         -->
-        </div>
-        <v-spacer></v-spacer>
-        <v-tooltip bottom>
-          <template v-slot:activator="{ on, attrs }">
-            <v-btn
-              color="primary"
-              rounded
-              depressed
-              v-bind="attrs"
-              v-on="on"
-              @click="changeTheme()"
-            >
-              <v-icon> mdi-brightness-6 </v-icon>
-            </v-btn>
-          </template>
-          <span>THEME</span>
-        </v-tooltip>
-      
+      </div>
+      <v-spacer></v-spacer>
+      <v-tooltip bottom>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+            color="primary"
+            rounded
+            depressed
+            v-bind="attrs"
+            v-on="on"
+            @click="changeTheme()"
+          >
+            <v-icon> mdi-brightness-6 </v-icon>
+          </v-btn>
+        </template>
+        <span>THEME</span>
+      </v-tooltip>
     </v-app-bar>
 
     <v-main>
       <MainView />
     </v-main>
+    <v-footer color="primary" padless>
+      <v-col class="text-center primary white--text" cols="12">
+        2022 — <strong>CREATED BY NICK</strong>
+      </v-col>
+    </v-footer>
   </v-app>
 </template>
 
@@ -52,16 +56,16 @@ export default {
   data: () => ({
     //
   }),
-  methods:{
-    changeTheme(){
+  methods: {
+    changeTheme() {
       this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-.title{
+.title {
   color: white;
 }
 </style>
