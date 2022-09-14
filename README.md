@@ -1,6 +1,6 @@
 # Perlin Noise and Astar Path Finder
 
-Website live. Visit www.perlin-path.web.app
+Website live. Visit https://perlin-path.web.app/
 
 Program was initially written as an entrance test. To be able to test the persons ability to google and present data.
 
